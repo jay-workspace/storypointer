@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <head>
+  </head>
+
+  <body>
+    <div class="login">
+      <BaseLogin />
+    </div>
+  </body>
+  <footer>
+  </footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BaseLogin from './components/login/BaseLogin.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BaseLogin
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+body {
+  background-color: #353d75;
 }
 </style>
